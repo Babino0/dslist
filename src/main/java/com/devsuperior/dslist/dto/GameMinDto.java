@@ -15,7 +15,6 @@ public class GameMinDto {
 	
 
 	public GameMinDto(Game entity) {
-		super();
 		id = entity.getId();
 		title = entity.getTitle();
 		year = entity.getYear();
