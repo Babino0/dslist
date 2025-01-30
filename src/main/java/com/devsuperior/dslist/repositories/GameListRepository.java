@@ -11,11 +11,11 @@ import com.devsuperior.dslist.projections.GameMinProjection;
 public interface GameListRepository extends JpaRepository<GameList, Long> {
 
 	@Query("""
-			    SELECT g.id AS id, 
-			           g.title AS title, 
-			           g.year AS year, 
-			           g.imgUrl AS imgUrl, 
-			           g.shortDescription AS shortDescription, 
+			    SELECT g.id AS id,
+			           g.title AS title,
+			           g.year AS year,
+			           g.imgUrl AS imgUrl,
+			           g.shortDescription AS shortDescription,
 			           b.position AS position
 			    FROM Game g
 			    JOIN Belonging b ON b.id.game = g
