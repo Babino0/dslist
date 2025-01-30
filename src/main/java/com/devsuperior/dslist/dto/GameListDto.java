@@ -1,31 +1,17 @@
 package com.devsuperior.dslist.dto;
 
-import com.devsuperior.dslist.entities.GameList;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class GameListDto {
-	private Long id;
-	private String name;
-	
-	public GameListDto() {
-		
-	}
-	
-
-	public GameListDto(GameList entity) {
-			
-		id = entity.getId();
-		name = entity.getName();
-		}
+    private Long id;
+    private String name;
 
 
-	public Long getId() {
-		return id;
-	}
-
-
-	public String getName() {
-		return name;
-	}
-
-	
 }
